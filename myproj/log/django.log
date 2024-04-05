@@ -1,0 +1,284 @@
+INFO 2024-03-28 19:03:30,788 autoreload 16792 6980 Watching for file changes with StatReloader
+INFO 2024-03-28 19:03:37,050 basehttp 16792 24504 "GET / HTTP/1.1" 200 130
+INFO 2024-03-28 19:04:21,617 basehttp 16792 24504 "GET /info/ HTTP/1.1" 200 228
+INFO 2024-03-28 19:12:32,171 autoreload 20972 15376 Watching for file changes with StatReloader
+INFO 2024-03-28 19:12:38,274 basehttp 20972 13816 "GET / HTTP/1.1" 200 130
+INFO 2024-03-28 19:12:56,480 basehttp 20972 13816 "GET /info/ HTTP/1.1" 200 228
+INFO 2024-03-28 19:17:40,305 autoreload 20972 15376 C:\Users\Рабочий\Desktop\djangodzr\myproj\myproj\settings.py changed, reloading.
+INFO 2024-03-28 19:17:40,780 autoreload 22452 15576 Watching for file changes with StatReloader
+INFO 2024-03-28 19:17:45,282 views 22452 7012 Перешли на страницу с информацией обо мне - 
+        <h2>Чуть-чуть обо мне.</h2>
+        <p>Зовут меня Максим. Являюсь студентом GB.</p>
+        <p>Мало времени на учёбу, но я стараюсь.</p>
+        
+INFO 2024-03-28 19:17:45,283 basehttp 22452 7012 "GET /info/ HTTP/1.1" 200 228
+INFO 2024-03-28 19:17:46,150 views 22452 7012 Перешли на страницу с информацией обо мне - 
+        <h2>Чуть-чуть обо мне.</h2>
+        <p>Зовут меня Максим. Являюсь студентом GB.</p>
+        <p>Мало времени на учёбу, но я стараюсь.</p>
+        
+INFO 2024-03-28 19:17:46,152 basehttp 22452 7012 "GET /info/ HTTP/1.1" 200 228
+INFO 2024-03-28 19:17:49,441 views 22452 7012 Перешли на главную страницу - 
+        <h1>Добро пожаловать!</h1>
+        <p>Вы посетили мой первый Django - сайт</p>
+    
+INFO 2024-03-28 19:17:49,442 basehttp 22452 7012 "GET / HTTP/1.1" 200 130
+INFO 2024-03-28 19:18:12,788 autoreload 22452 15576 C:\Users\Рабочий\Desktop\djangodzr\myproj\myweb\views.py changed, reloading.
+INFO 2024-03-28 19:18:13,271 autoreload 14120 19944 Watching for file changes with StatReloader
+INFO 2024-03-28 19:18:17,048 views 14120 25416 Перешли на главную страницу.
+INFO 2024-03-28 19:18:17,049 basehttp 14120 25416 "GET / HTTP/1.1" 200 130
+INFO 2024-03-28 19:18:27,737 views 14120 25416 Перешли на страницу с информацией обо мне.
+INFO 2024-03-28 19:18:27,737 basehttp 14120 25416 "GET /info/ HTTP/1.1" 200 228
+INFO 2024-04-02 19:40:24,680 autoreload 18664 15192 Watching for file changes with StatReloader
+INFO 2024-04-02 19:48:02,673 autoreload 14768 6520 Watching for file changes with StatReloader
+INFO 2024-04-02 19:48:58,885 autoreload 25236 12060 Watching for file changes with StatReloader
+INFO 2024-04-02 19:50:25,541 autoreload 24008 19532 Watching for file changes with StatReloader
+INFO 2024-04-02 19:58:19,377 autoreload 24008 19532 C:\Users\Рабочий\Desktop\djangodzr\myproj\myweb\models.py changed, reloading.
+INFO 2024-04-02 19:58:19,903 autoreload 12712 4508 Watching for file changes with StatReloader
+INFO 2024-04-02 19:58:25,761 autoreload 3868 8828 Watching for file changes with StatReloader
+WARNING 2024-04-02 19:58:35,182 log 3868 25224 Not Found: /
+WARNING 2024-04-02 19:58:35,183 basehttp 3868 25224 "GET / HTTP/1.1" 404 2584
+INFO 2024-04-02 19:59:15,137 autoreload 3868 8828 C:\Users\Рабочий\Desktop\djangodzr\myproj\myweb\urls.py changed, reloading.
+INFO 2024-04-02 19:59:15,718 autoreload 5036 1368 Watching for file changes with StatReloader
+INFO 2024-04-02 19:59:19,107 basehttp 5036 18016 "GET /client HTTP/1.1" 301 0
+ERROR 2024-04-02 19:59:19,199 log 5036 20656 Internal Server Error: /client/
+Traceback (most recent call last):
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\myproj\myweb\views.py", line 43, in create_client
+    return render(request, 'create_client.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: create_client.html
+ERROR 2024-04-02 19:59:19,203 basehttp 5036 20656 "GET /client/ HTTP/1.1" 500 84000
+WARNING 2024-04-02 20:01:03,357 log 5036 15540 Not Found: /corder
+WARNING 2024-04-02 20:01:03,358 basehttp 5036 15540 "GET /corder HTTP/1.1" 404 2623
+INFO 2024-04-02 20:01:09,540 basehttp 5036 25528 "GET /order HTTP/1.1" 301 0
+ERROR 2024-04-02 20:01:09,721 log 5036 17700 Internal Server Error: /order/
+Traceback (most recent call last):
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: myweb_client.registration_date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\myproj\myweb\views.py", line 58, in create_order
+    return render(request, 'create_order.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\base.py", line 710, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\base.py", line 909, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\forms\utils.py", line 87, in as_p
+    return self.render(self.template_name_p)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\forms\utils.py", line 55, in render
+    return mark_safe(renderer.render(template, context))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\forms\renderers.py", line 29, in render
+    return template.render(context, request=request).strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\base.py", line 1065, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\base.py", line 1042, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\forms\utils.py", line 79, in __str__
+    return self.as_widget()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\forms\boundfield.py", line 108, in as_widget
+    return widget.render(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\forms\widgets.py", line 278, in render
+    context = self.get_context(name, value, attrs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\forms\widgets.py", line 764, in get_context
+    context = super().get_context(name, value, attrs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\forms\widgets.py", line 715, in get_context
+    context["widget"]["optgroups"] = self.optgroups(
+                                     ^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\forms\widgets.py", line 655, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\forms\models.py", line 1422, in __iter__
+    for obj in queryset:
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\db\models\query.py", line 518, in _iterator
+    yield from iterable
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: myweb_client.registration_date
+ERROR 2024-04-02 20:01:09,741 basehttp 5036 17700 "GET /order/ HTTP/1.1" 500 280779
+INFO 2024-04-02 20:02:34,144 autoreload 5036 1368 C:\Users\Рабочий\Desktop\djangodzr\myproj\myweb\views.py changed, reloading.
+INFO 2024-04-02 20:02:34,688 autoreload 11964 10968 Watching for file changes with StatReloader
+INFO 2024-04-02 20:02:48,214 autoreload 11964 10968 C:\Users\Рабочий\Desktop\djangodzr\myproj\myweb\urls.py changed, reloading.
+INFO 2024-04-02 20:02:48,727 autoreload 22924 18596 Watching for file changes with StatReloader
+INFO 2024-04-02 20:03:08,162 autoreload 8536 10700 Watching for file changes with StatReloader
+INFO 2024-04-02 20:03:26,773 autoreload 8536 10700 C:\Users\Рабочий\Desktop\djangodzr\myproj\myweb\urls.py changed, reloading.
+INFO 2024-04-02 20:03:27,242 autoreload 13276 18496 Watching for file changes with StatReloader
+INFO 2024-04-02 20:03:35,904 basehttp 13276 11556 "GET /client/ HTTP/1.1" 200 224
+INFO 2024-04-02 20:03:38,325 basehttp 13276 4484 "POST /client/ HTTP/1.1" 200 224
+INFO 2024-04-02 20:03:40,064 basehttp 13276 4484 "POST /client/ HTTP/1.1" 200 224
+INFO 2024-04-02 20:03:41,234 basehttp 13276 4484 "POST /client/ HTTP/1.1" 200 224
+INFO 2024-04-02 20:07:58,955 autoreload 13276 18496 C:\Users\Рабочий\Desktop\djangodzr\myproj\myweb\views.py changed, reloading.
+INFO 2024-04-02 20:07:59,502 autoreload 19152 16456 Watching for file changes with StatReloader
+INFO 2024-04-02 20:08:38,502 autoreload 19152 16456 C:\Users\Рабочий\Desktop\djangodzr\myproj\myweb\urls.py changed, reloading.
+INFO 2024-04-02 20:08:38,974 autoreload 2700 14120 Watching for file changes with StatReloader
+INFO 2024-04-02 20:08:48,489 basehttp 2700 2948 "POST /client/ HTTP/1.1" 200 1418
+INFO 2024-04-02 20:09:28,323 basehttp 2700 23660 "POST /client/ HTTP/1.1" 200 1174
+INFO 2024-04-02 20:12:40,816 basehttp 2700 18308 "POST /client/ HTTP/1.1" 200 1174
+INFO 2024-04-02 20:19:14,653 autoreload 15280 5100 Watching for file changes with StatReloader
+INFO 2024-04-02 20:19:23,665 basehttp 15280 19992 "POST /client/ HTTP/1.1" 200 1174
+INFO 2024-04-02 20:19:26,296 basehttp 15280 12016 "POST /client/ HTTP/1.1" 200 1174
+INFO 2024-04-02 20:25:23,192 autoreload 15280 5100 C:\Users\Рабочий\Desktop\djangodzr\myproj\myweb\views.py changed, reloading.
+INFO 2024-04-02 20:25:23,692 autoreload 5096 25084 Watching for file changes with StatReloader
+INFO 2024-04-02 20:25:43,378 autoreload 5096 25084 C:\Users\Рабочий\Desktop\djangodzr\myproj\myweb\views.py changed, reloading.
+INFO 2024-04-02 20:25:43,875 autoreload 23856 13292 Watching for file changes with StatReloader
+INFO 2024-04-02 20:25:52,127 basehttp 23856 18388 "POST /client/ HTTP/1.1" 200 1174
+INFO 2024-04-02 20:25:56,472 basehttp 23856 18388 "POST /client/ HTTP/1.1" 200 1174
+INFO 2024-04-02 20:26:37,535 autoreload 14136 22500 Watching for file changes with StatReloader
+WARNING 2024-04-02 20:26:47,588 log 14136 19340 Not Found: /
+WARNING 2024-04-02 20:26:47,589 basehttp 14136 19340 "GET / HTTP/1.1" 404 2585
+INFO 2024-04-02 20:26:53,435 basehttp 14136 19340 "GET /client/ HTTP/1.1" 200 1020
+INFO 2024-04-02 20:27:40,555 basehttp 14136 19340 "POST /client/ HTTP/1.1" 200 1193
+INFO 2024-04-02 20:28:45,343 basehttp 14136 19340 "GET /product HTTP/1.1" 301 0
+INFO 2024-04-02 20:28:45,352 basehttp 14136 11488 "GET /product/ HTTP/1.1" 200 996
+INFO 2024-04-02 20:29:03,042 basehttp 14136 11488 "POST /product/ HTTP/1.1" 200 1130
+INFO 2024-04-02 20:29:17,372 basehttp 14136 11488 "GET /order/ HTTP/1.1" 200 870
+INFO 2024-04-02 20:32:48,389 autoreload 14136 22500 C:\Users\Рабочий\Desktop\djangodzr\myproj\myweb\views.py changed, reloading.
+INFO 2024-04-02 20:32:48,954 autoreload 5732 12696 Watching for file changes with StatReloader
+INFO 2024-04-02 20:36:31,800 basehttp 5732 17704 "GET /client/ HTTP/1.1" 200 1020
+INFO 2024-04-02 20:36:44,184 basehttp 5732 17704 "POST /client/ HTTP/1.1" 200 1193
+INFO 2024-04-02 20:37:08,852 basehttp 5732 4984 "POST /client/ HTTP/1.1" 200 1194
+INFO 2024-04-02 20:37:13,045 basehttp 5732 4984 "POST /client/ HTTP/1.1" 200 1192
+ERROR 2024-04-02 20:38:00,161 log 5732 23400 Internal Server Error: /client/
+Traceback (most recent call last):
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\myproj\myweb\views.py", line 49, in create_client
+    return render(request, 'success.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Рабочий\Desktop\djangodzr\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: success.html
+ERROR 2024-04-02 20:38:00,164 basehttp 5732 23400 "POST /client/ HTTP/1.1" 500 85417
+INFO 2024-04-02 20:46:33,957 autoreload 5732 12696 C:\Users\Рабочий\Desktop\djangodzr\myproj\myweb\views.py changed, reloading.
+INFO 2024-04-02 20:46:34,465 autoreload 20216 8136 Watching for file changes with StatReloader
+INFO 2024-04-02 20:46:41,103 basehttp 20216 19080 "POST /client/ HTTP/1.1" 200 190
+INFO 2024-04-02 20:46:54,444 basehttp 20216 19080 "POST /client/ HTTP/1.1" 200 188
+INFO 2024-04-02 20:47:21,487 basehttp 20216 19080 "GET /product/ HTTP/1.1" 200 996
+INFO 2024-04-02 20:48:12,963 basehttp 20216 19080 "POST /product/ HTTP/1.1" 200 184
+INFO 2024-04-02 20:48:47,011 basehttp 20216 19080 "GET /order/ HTTP/1.1" 200 1026
+INFO 2024-04-02 20:49:10,845 autoreload 20216 8136 C:\Users\Рабочий\Desktop\djangodzr\myproj\myweb\views.py changed, reloading.
+INFO 2024-04-02 20:49:11,360 autoreload 21732 9788 Watching for file changes with StatReloader
+INFO 2024-04-02 20:49:40,146 basehttp 21732 4236 "POST /order/ HTTP/1.1" 200 184
